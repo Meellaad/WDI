@@ -1,0 +1,541 @@
+@import url('resetter.css');
+@import url('general.css');
+
+/* ----------- MAIN ----------- */
+
+main{
+  background-color: #f3f3f3;
+}
+#advertise {
+  position: relative;
+}
+  #advertise .otto {
+    max-width: 30%;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+    #advertise .otto h1 {
+      text-align: center;
+      vertical-align: top;
+      background-color: #e24c47;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 3em;
+      height: 55px;
+      width: 350px;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+    }
+    #advertise .otto h1:hover {
+      background-color: #76c7c0;
+      cursor: pointer;
+    }
+    #advertise .otto p {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      text-align: center;
+      vertical-align: middle;
+      width: 470px;
+      position: absolute;
+      left: -60px;
+      margin-top: 10px;
+      border-radius: 5px;
+      padding: 10px;
+      font-weight: 400;
+    }
+  #advertise .banner {}
+    #advertise .banner div {
+      height: 500px;
+    }
+      #advertise .banner div img {
+        width: 100%;
+        height: 500px;
+      }
+      #advertise .banner i {
+        width: 40px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        color: #fff;
+        background: #e24c47;
+        opacity: 1;
+        z-index: 2;
+      }
+      #advertise .banner i.fa-angles-left { 
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+        border-radius: 0 5px 5px 0;
+      }
+      #advertise .banner i.fa-angles-right {
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        transform: translateY(-50%);
+        border-radius: 5px 0 0 5px;
+      }
+      #advertise .banner i:hover {
+        background-color: #76c7c0;
+        cursor: pointer;
+        font-size: larger;
+      }
+      #advertise .banner .slick-dots {
+        display: flex;
+	      justify-content: center;
+	      margin: 0;
+      	padding: -3rem 0;
+      	list-style-type: none;
+      }
+      #advertise .banner .slick-dots li {
+        margin: 0 0.25rem;
+      }
+      #advertise .banner .slick-dots li button {
+        display: block;
+		   	width: 1rem;
+		  	height: 1rem;
+		  	padding: 10px;
+		  	border: none;
+	  		border-radius: 15%;
+		  	background-color: #76c7c0;
+		  	text-indent: -9999px;
+      }
+      #advertise .banner li.slick-active button {
+        background-color: #e24d47;
+      }
+  #content .dv1 {
+    background-color: #ececec;
+    color: #7f8c8d;
+    width: 100%;
+    height: 100px;
+    overflow: auto;
+    padding: 25px;
+  }
+    #content .dv1 a {
+      color: #fff;
+      background-color: #e8645a;
+      display: inline-block;
+      float: right;
+      width: 20%;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.6em;
+      padding-top: 5px;
+      border-radius: 5px;
+      box-shadow: 0 3px #e24d47;
+    }
+    #content .dv1 a:hover {
+      background-color: #76c7c0;
+      box-shadow: 0 3px #528b86;
+    }
+    #content .dv1 div {
+      float: left;
+      width: 80%;
+      height: 50px;
+    }
+      #content .dv1 h2 {
+        font-weight: 400;
+        letter-spacing: 5px;
+        
+    }
+      #content .dv1 p {
+        font-size: smaller;
+    }
+  #content .dv2 {
+    width: 100%;
+    overflow: visible;
+    margin: 30px 0 60px 0;
+  }
+    #content .dv2 li {
+      display: inline-block;
+      position: relative;
+      width: 23%;
+      height: 300px;
+      vertical-align: top;
+      background-color: #f8f8f8;
+    }
+    #content .dv2 li.first {
+      float: left;
+      margin-right: 2.5%;
+    }
+    #content .dv2 li.second {}
+    #content .dv2 li.third {
+      margin-left: 2.5%;
+    }
+    #content .dv2 li.last {
+      float: right;
+      margin-left: 2.5%;
+    }
+      #content .dv2 li i {
+        position: absolute;
+        display: inline-block;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 30px 0;
+        font-size: 3em;
+        color: #76c7c0;
+      }
+      #content .dv2 li h4 {
+        color: #7f8c8d;
+        position: absolute;
+        top: 90px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.3em;
+        text-transform: uppercase;
+      }
+      #content .dv2 li p {
+        color: #7f8c8d;
+        position: absolute;
+        top: 50%;
+        margin: 0 20px;
+        font-size: smaller;
+      }
+      #content .dv2 li a {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #76c7c0;
+        color: #fff;
+        width: 200px;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 5px;
+        box-shadow: 0 3px #528b86;
+      }
+      #content .dv2 li:hover {
+        background-color: #fff;
+      }
+      #content .dv2 li a:hover {
+        background-color: #e8645a;
+        box-shadow: 0 3px #e24d47;
+      }
+      #content .dv2 li:hover i {
+        color: #e24c47;
+      }
+  #content .dv3 {
+    background-color: #ececec;
+    background-image: url('../images/cross.png');
+    background-repeat: repeat-x;
+    background-size: 10px;
+    background-position: left top;
+    width: 100%;
+    height: 400px;
+    overflow: visible;
+    margin-bottom: 200px;
+  }
+    #content .dv3 div {
+      text-align: center;
+      padding-top: 60px;
+    }
+      #content .dv3 div h1 {
+        color: #e24d47;
+        text-transform: uppercase;
+        font-size: 3em;
+        font-weight: 400;
+      }
+      #content .dv3 div p {
+        color: #7f8c8d;
+        margin-top: -20px;
+      }
+    #content .dv3 ul {
+      width: 100%;
+      margin-top: 100px;
+    }
+      #content .dv3 ul li {
+        width: 32%;
+        height: 250px;
+        float: left;
+        background-color: #76c7c0;
+        text-align: center;
+        padding: 30px 5px 5px;
+        border-radius: 10px;
+        transition: transform 0.25s;
+      }
+      #content .dv3 ul li:hover {
+        background-color: #e24d47;
+        transform: scale(150%);
+        cursor: pointer;
+        box-shadow: 0 0 15px 2px #00000096;
+      }
+      #content .dv3 ul li.mid {
+        margin-left: 1.95%;
+        margin-right: 1.95%;
+      }
+        #content .dv3 ul li img {
+          display: inline-block;
+          width: 100%;
+          height: 215px;
+          border-radius: 5px;
+        }
+  #content .dv4 {
+    width: 100%;
+    overflow: auto;
+    padding-bottom: 50px;
+    color: #7f8c8d;
+  }
+    #content .dv4 .leftS {
+      width: 20%;
+      float: left;
+    }
+      #content .dv4 .leftS h4 {
+        margin-bottom: 20px;
+        font-size: 1.2em;
+      }
+      #content .dv4 .leftS ul {}
+        #content .dv4 .leftS ul li {
+          padding-left: 20px;
+        }
+          #content .dv4 .leftS ul li a {
+            color: #7f8c8d;
+            display: inline-block;
+            position: relative;
+            padding-bottom: 5px;
+            font-size: smaller;
+          }
+          #content .dv4 .leftS ul li a::before {
+            content: '\f061';
+            font-family: 'FontAwsome';
+            color: #e24d47;
+            font-size: smaller;
+            position: absolute;
+            left: -20px;
+            top: 1px;
+          }
+          #content .dv4 .leftS ul li a:hover {
+            color: #e24d47;
+          }
+          #content .dv4 .leftS ul li a:hover::before {
+            color: #76c7c0;
+            font-weight: bold;
+          }
+    #content .dv4 .middleS {
+      width: 59.9%;
+      float: left;
+    }
+      #content .dv4 .middleS p {
+        margin-bottom: 50px;
+        padding: 0 60px 0 75px;
+      }
+        #content .dv4 .middleS p a {
+          text-decoration: underline;
+          color: #e24d47;
+        }
+        #content .dv4 .middleS p a:hover {
+          color: #76c7c0;
+        }
+          #content .dv4 .middleS .gauge {
+            width: 100%;
+          }
+          #content .dv4 .middleS .gauge .donut {
+            display: inline-block;
+            width: 120px;
+            height: 60px;
+            margin-left: 35px;
+            background-color: #76c7c0;
+            position: relative;
+            border-top-left-radius: 100% 200%;
+            border-top-right-radius: 100% 200%;
+            transform-origin: center center;
+            overflow: hidden;
+          }
+            #content .dv4 .middleS .gauge .donut .fill {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              background-color: #e24d47;
+              border-bottom-left-radius: 100% 200%;
+              border-bottom-right-radius: 100% 200%;
+              top: 60px;
+              transform-origin: center top;
+            }
+            #content .dv4 .middleS .gauge .donut:nth-child(1) .fill {
+              animation-name: anim1;
+              animation-duration: 2s;
+              animation-delay: 2s;
+              animation-fill-mode: forwards;
+              animation-iteration-count: 3;
+            }
+            #content .dv4 .middleS .gauge .donut:nth-child(2) .fill {
+              animation-name: anim2;
+              animation-duration: 2s;
+              animation-delay: 4s;
+              animation-fill-mode: forwards;
+              animation-iteration-count: 3;
+            }
+            #content .dv4 .middleS .gauge .donut:nth-child(3) .fill {
+              animation-name: anim3;
+              animation-duration: 2s;
+              animation-delay: 6s;
+              animation-fill-mode: forwards;
+              animation-iteration-count: 3;
+            }
+            #content .dv4 .middleS .gauge .donut:nth-child(4) .fill {
+              animation-name: anim4;
+              animation-duration: 2s;
+              animation-delay: 8s;
+              animation-fill-mode: forwards;
+              animation-iteration-count: 3;
+            }
+            @keyframes anim1 {
+              from {transform: rotate(0deg);}
+              to {transform: rotate(90deg);}
+            }
+            @keyframes anim2 {
+              from {transform: rotate(0deg);}
+              to {transform: rotate(120deg);}
+            }
+            @keyframes anim3 {
+              from {transform: rotate(0deg);}
+              to {transform: rotate(150deg);}
+            }
+            @keyframes anim4 {
+              from {transform: rotate(0deg);}
+              to {transform: rotate(180deg);}
+            }
+              #content .dv4 .middleS .gauge .donut .cover {
+                position: absolute;
+                width: 80px;
+                height: 40px;
+                background-color: #f3f3f3;
+                top: 20px;
+                left: 20px;
+                border-top-left-radius: 100% 200%;
+                border-top-right-radius: 100% 200%;
+              }
+              #content .dv4 .middleS .gauge .donut span {
+                display: inline-block;
+                position: absolute;
+                top: 30px;
+                left: 60px;
+                transform: translate(-50%, 0%);
+                font-size: xx-large;
+                font-weight: bold;
+              }
+            #content .dv4 .middleS .labels {
+              width: 100%;
+              margin-top: 10px;
+            }
+              #content .dv4 .middleS .labels span {
+                display: inline-block;
+                margin-left: 40px;
+                font-size: large;
+                font-weight: bold;
+                text-transform: uppercase;
+              }
+              #content .dv4 .middleS .labels span:nth-child(2) {
+                margin-left: 60px;
+              }
+              #content .dv4 .middleS .labels span:nth-child(3) {
+                margin-left: 70px;
+              }
+              #content .dv4 .middleS .labels span:nth-child(4) {
+                margin-left: 70px;
+              }
+    #content .dv4 .rightS {
+      width: 20%;
+      float: right;
+    }
+      #content .dv4 .rightS h4 {
+        margin-bottom: 20px;
+        font-size: 1.2em;
+      }
+      #content .dv4 .rightS p {
+        background-color: #fff;
+        font-size: smaller;
+        padding: 10px;
+        position: relative;
+      }
+      #content .dv4 .rightS p::before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 30px solid transparent;
+        border-top: 30px solid #fff; 
+        position: absolute;
+        top: 100%;
+        left: 20%;
+        transform: translateX(-50%);
+      }
+      #content .dv4 .rightS p::after {
+        content: "John Doe";
+        position: absolute;
+        top: 105%;
+        left: 30%;
+        font-size: large;
+      }
+  #content .dv5 {
+    width: 100%;
+    padding-bottom: 50px;
+    position: relative;
+  }
+    #content .dv5 h4 {
+      color: #7f8c8d;
+      position: absolute;
+      background-color: #f3f3f3;
+      top: -12px;
+      padding-right: 10px;
+    }
+    #content .dv5 .clear {
+      background-color: #f3f3f3;
+      display: inline-block;
+      position: absolute;
+      width: 70px;
+      height: 30px;
+      top: 20%;
+      transform: translateY(-200%);
+      right: 0;
+    }
+    #content .dv5 .slider {
+      padding-top: 60px;
+      text-align: center;
+    }
+      #content .dv5 .slider i.fa-solid {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        color: #fff;
+        background: #e24c47;
+        opacity: 1;
+        z-index: 40;
+      }
+      #content .dv5 .slider i.fa-solid:hover {
+        background-color: #76c7c0;
+      }
+      #content .dv5 .slider i.fa-angle-right {
+        position: absolute;
+        top: 16%;
+        right: 0px;
+        transform: translateY(-200%);
+        border-radius: 5px;
+      }
+      #content .dv5 .slider i.fa-angle-left {
+        position: absolute;
+        top: 16%;
+        left: 96%;
+        transform: translateY(-200%);
+        border-radius: 5px;
+      }
+        #content .dv5 .slider div span {
+          font-size: 4em;
+          display: inline-block;
+          background-color: #fff;
+          color: #7f8c8d;
+          padding: 20px 40px;
+        }
+        #content .dv5 .slider div span:hover {
+          color: #e24d47;
+          cursor: pointer;
+        }
+        hr.ruler{
+          border-color: #7f8c8d;
+        }
+

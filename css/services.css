@@ -1,0 +1,396 @@
+@import url('resetter.css');
+@import url('general.css');
+
+/* ----------- MAIN ----------- */
+
+main{
+  background-color: #f3f3f3;
+}
+  main .toph {
+    background-color: #ececec;
+    color: #7f8c8d;
+    height: 80px;
+    line-height: 80px;
+    position: relative;
+  }
+  main .toph::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-top-color: #ececec;
+    border-bottom: 0;
+  }
+    main .toph .lefth {
+      float: left;
+      font-size: x-large;
+      text-transform: uppercase;
+    }
+    main .toph .righth {
+      float: right;
+    }
+      main .toph .righth a {
+        color: #7f8c8d;
+        font-size: smaller;
+        font-weight: 400;
+      }
+      main .toph .righth a:hover {
+        color: #e24d47;
+      }
+  #secone {
+    padding: 50px 0;
+  }
+    #secone .topso {
+      width: 100%;
+    }
+      #secone .topso h2 {
+        color: #e24d47;
+        font-weight: 400;
+        font-size: 2em;
+        padding-bottom: 10px;
+      }
+      #secone .topso p {
+        color: #7f8c8d;
+        padding-bottom: 60px;
+      }
+    #secone .botso {
+      overflow: auto;
+      width: 100%;
+    }
+      #secone .botso .coll {
+        width: 20%;
+        float: left;
+      }
+      #secone .botso .coll h3 {
+        color: #7f8c8d;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+      }
+      #secone .botso .coll ul {}
+        #secone .botso .coll ul li {
+          padding-left: 20px;
+        }
+          #secone .botso .coll ul li a {
+            color: #7f8c8d;
+            display: inline-block;
+            position: relative;
+            padding-bottom: 5px;
+            font-size: smaller;
+          }
+          #secone .botso .coll ul li a::before {
+            content: '\f061';
+            font-family: 'FontAwsome';
+            color: #e24d47;
+            font-size: smaller;
+            position: absolute;
+            left: -20px;
+            top: 1px;
+          }
+          #secone .botso .coll ul li a:hover {
+            color: #e24d47;
+          }
+          #secone .botso .coll ul li a:hover::before {
+            color: #76c7c0;
+            font-weight: bold;
+          }
+      #secone .botso .colr {
+        width: 59.9%;
+        float: right;
+      }
+        #secone .botso .colr p {
+          color: #7f8c8d;
+          font-size: smaller;
+          padding-bottom: 30px;
+        }
+          #secone .botso .colr p a {
+            color: #e24d47;
+          }
+          #secone .botso .colr p a:hover {
+            color: #76c7c0;
+          }
+        #secone .botso .colr .gauge {
+          width: 100%;
+          padding-top: 30px;
+        }
+          #secone .botso .colr .gauge .donut {
+            display: inline-block;
+            width: 120px;
+            height: 60px;
+            margin-left: 35px;
+            background-color: #76c7c0;
+            position: relative;
+            border-top-left-radius: 100% 200%;
+            border-top-right-radius: 100% 200%;
+            transform-origin: center center;
+            overflow: hidden;
+          }
+            #secone .botso .colr .gauge .donut .fill {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              background-color: #e24d47;
+              border-bottom-left-radius: 100% 200%;
+              border-bottom-right-radius: 100% 200%;
+              top: 60px;
+              transform-origin: center top;
+            }
+            #secone .botso .colr .gauge .donut:nth-child(1) .fill {
+              animation-name: anim1;
+              animation-duration: 2s;
+              animation-delay: 2s;
+              animation-fill-mode: forwards;
+              animation-iteration-count: 2;
+            }
+            #secone .botso .colr .gauge .donut:nth-child(2) .fill {
+              animation-name: anim2;
+              animation-duration: 2s;
+              animation-delay: 4s;
+              animation-fill-mode: forwards;
+              animation-iteration-count: 2;
+            }
+            #secone .botso .colr .gauge .donut:nth-child(3) .fill {
+              animation-name: anim3;
+              animation-duration: 2s;
+              animation-delay: 6s;
+              animation-fill-mode: forwards;
+              animation-iteration-count: 2;
+            }
+            #secone .botso .colr .gauge .donut:nth-child(4) .fill {
+              animation-name: anim4;
+              animation-duration: 2s;
+              animation-delay: 8s;
+              animation-fill-mode: forwards;
+              animation-iteration-count: 2;
+            }
+            @keyframes anim1 {
+              from {transform: rotate(0deg);}
+              to {transform: rotate(90deg);}
+            }
+            @keyframes anim2 {
+              from {transform: rotate(0deg);}
+              to {transform: rotate(120deg);}
+            }
+            @keyframes anim3 {
+              from {transform: rotate(0deg);}
+              to {transform: rotate(150deg);}
+            }
+            @keyframes anim4 {
+              from {transform: rotate(0deg);}
+              to {transform: rotate(180deg);}
+            }
+            #secone .botso .colr .gauge .donut .cover {
+              position: absolute;
+              width: 80px;
+              height: 40px;
+              background-color: #f3f3f3;
+              top: 20px;
+              left: 20px;
+              border-top-left-radius: 100% 200%;
+              border-top-right-radius: 100% 200%;
+            }
+            #secone .botso .colr .gauge .donut span {
+              display: inline-block;
+              position: absolute;
+              top: 30px;
+              left: 60px;
+              transform: translate(-50%, 0%);
+              font-size: xx-large;
+              font-weight: bold;
+              color: #7f8c8d;
+            }
+          #secone .botso .colr .labels {
+            width: 100%;
+            margin-top: 10px;
+          }
+            #secone .botso .colr .labels span {               
+            display: inline-block;
+            margin-left: 40px;
+            font-size: large;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #7f8c8d;
+          }
+          #secone .botso .colr .labels span:nth-child(2) {
+            margin-left: 60px;
+          }
+          #secone .botso .colr .labels span:nth-child(3) {
+            margin-left: 70px;
+          }
+          #secone .botso .colr .labels span:nth-child(4) {
+            margin-left: 70px;
+          }
+  #sectwo {
+    background-color: #ececec;
+    width: 100%;
+    height: 400px;
+    overflow: visible;
+    background-image: url('../images/cross.png');
+    background-repeat: repeat-x;
+    background-size: 10px;
+    background-position: left top;
+    margin-bottom: 150px;
+  }
+    #sectwo h1 {
+    color: #7f8c8d;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 400;
+    padding-top: 50px;
+    }
+    #sectwo ul {
+    width: 100%;
+    margin-top: 60px;
+    }
+      #sectwo ul li {
+        width: 23%;
+        height: 300px;
+        float: left;
+        background-color: #fff;
+        border-radius: 5px;
+        position: relative;
+        padding: 50px 30px;
+        box-shadow: 0 3px #808b8d;
+      }
+      #sectwo ul li:nth-child(1) {
+        margin-right: 2.6%;
+      }
+      #sectwo ul li:nth-child(2) {}
+      #sectwo ul li:nth-child(3) {
+        margin-left: 2.6%;
+      }
+      #sectwo ul li:nth-child(4) {
+        float: right;
+        margin-left: 2.6%;
+      }
+      #sectwo ul li:hover {
+        background-color: #76c7c0;
+      }
+        #sectwo ul li span {
+          display: inline-block;
+          background-color: #808b8d;
+          color: #fff;
+          text-transform: uppercase;
+          width: 200px;
+          text-align: center;
+          border-radius: 5px;
+          height: 40px;
+          line-height: 40px;
+          padding-top: 3px;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        #sectwo ul li:hover span {
+          background-color: #e24d47;
+        }
+        #sectwo ul li p {
+          padding: 13px 0;
+          color: #808b8d;
+        }
+        #sectwo ul li:hover p {
+          color: #fff;
+        }
+        #sectwo ul li a {
+          display: inline-block;
+          background-color: #808b8d;
+          color: #fff;
+          text-transform: uppercase;
+          width: 200px;
+          text-align: center;
+          border-radius: 5px;
+          height: 40px;
+          line-height: 40px;
+          padding-top: 3px;
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        #sectwo ul li a:hover {
+          background-color: #e24d47;
+        }
+  #secthree {}
+    #secthree .dv6 {
+      text-align: center;
+      padding-bottom: 50px;
+    }
+      #secthree .dv6 h1 {
+        color: #e24d47;
+        font-size: 3em;
+        font-weight: 300;
+      }
+      #secthree .dv6 p {
+        color: #808b8d;
+        font-size: smaller;
+      }
+    #secthree .dv5 {
+      width: 100%;
+      padding-bottom: 50px;
+      position: relative;
+    }
+      #secthree .dv5 h4 {
+        color: #7f8c8d;
+        position: absolute;
+        background-color: #f3f3f3;
+        top: -12px;
+        padding-right: 10px;
+      }
+      #secthree .dv5 .clear {
+        background-color: #f3f3f3;
+        display: inline-block;
+        position: absolute;
+        width: 70px;
+        height: 30px;
+        top: 20%;
+        transform: translateY(-200%);
+        right: 0;
+      }
+      #secthree .dv5 .slider {
+        padding-top: 60px;
+        text-align: center;
+      }
+      #secthree .dv5 .slider i.fa-solid {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        color: #fff;
+        background: #e24c47;
+        opacity: 1;
+        z-index: 40;
+      }
+      #secthree .dv5 .slider i.fa-solid:hover {
+        background-color: #76c7c0;
+      }
+      #secthree .dv5 .slider i.fa-angle-right {
+        position: absolute;
+        top: 16%;
+        right: 0px;
+        transform: translateY(-200%);
+        border-radius: 5px;
+      }
+      #secthree .dv5 .slider i.fa-angle-left {
+        position: absolute;
+        top: 16%;
+        left: 96%;
+        transform: translateY(-200%);
+        border-radius: 5px;
+      }
+        #secthree .dv5 .slider div {}
+          #secthree .dv5 .slider div span {
+            font-size: 4em;
+            display: inline-block;
+            background-color: #fff;
+            color: #7f8c8d;
+            padding: 20px 40px;
+          }
+          #secthree .dv5 .slider div span:hover {
+            color: #e24d47;
+            cursor: pointer;
+          }
